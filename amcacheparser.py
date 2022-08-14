@@ -454,7 +454,7 @@ def main():
     args = parser.parse_args()
     
     # Define Vars
-    if args.live:
+    if args.live_amcache:
         if system() == 'Windows' and int(version().split(".")[0]) < 7:
             print("Your system is not compatible with Amcache.hve")
             sys.exit(1)
